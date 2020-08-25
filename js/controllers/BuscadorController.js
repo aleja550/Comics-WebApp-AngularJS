@@ -1,10 +1,11 @@
-app.controller("HeroeController", [
+app.controller("BuscadorController", [
   "$scope",
   "$routeParams",
   "heroesService",
-  
+
   function ($scope, $routeParams, heroesService) {
+    $scope.search = $routeParams.search
     var heroesList = heroesService();
-    $scope.heroe = heroesList.getHeroe($routeParams.id);
+    $scope.heroes = heroesList.getHeroes();
   },
 ]);

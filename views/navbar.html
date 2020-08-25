@@ -16,7 +16,9 @@
         </li>
     </ul>
     <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" ng-model="search" placeholder="Buscar heroe">
-        <button class="btn btn-dark" type="button">Buscar</button>
+        <input class="form-control mr-sm-2" type="search" ng-model="search" ng-change='getText()' placeholder="Buscar heroe">
+        <a class="btn btn-dark" href="#!buscador/{{text}}">Buscar</a>
     </form>
 </nav>
+
+

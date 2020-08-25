@@ -13,6 +13,10 @@ app.config(function ($routeProvider) {
       controller: "HeroeController",
       templateUrl: "./views/heroe.html",
     })
+    .when("/buscador/:search", {
+      controller: "BuscadorController",
+      templateUrl: "./views/buscador.html",
+    })
     .otherwise({
       redirectTo: "/home",
     });
